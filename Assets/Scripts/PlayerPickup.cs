@@ -5,27 +5,34 @@ using UnityEngine;
 public class PlayerPickup : MonoBehaviour
 {
     public bool pickup;
-
+    public bool pickupButtonDown;
 
     // Update is called once per frame
     void Update()
     {
-        if (pickup)
+        if(pickupButtonDown)
         {
-            Destroy(GameObject.FindWithTag("Item"));
-            pickup = false;
+            pickup = true;
         }
     }
 
 
     public void PickupButtonUp()
     {
-        pickup = true;
+        pickupButtonDown = true;
     }
 
     public void PickupButtonDown()
     {
-        pickup = false; 
+        pickupButtonDown = false; 
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (pickup && collision.tag == "Item")
+        {
+            Destroy(GameObject.FindWithTag("Item"));
+            pickup = false;
+        }
+    }
 }
