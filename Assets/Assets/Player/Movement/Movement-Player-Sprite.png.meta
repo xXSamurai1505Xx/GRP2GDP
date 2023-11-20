@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a6d58c18fefce14ab405614037247e9
+guid: 5bafcaffa7658224499ac3c2ffa75ee1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Turn-Player-Sprite_0
+      name: Movement-Player-Sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8bd25829699e014aab4ba695a4ed7c2
-      internalID: 1214359972
+      spriteID: 8f2b765823a37fa41b85a7990d6ae78e
+      internalID: -2014107993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Turn-Player-Sprite_1
+      name: Movement-Player-Sprite_1
       rect:
         serializedVersion: 2
         x: 64
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a945358844dbccc4695c0e19cf4c0ce5
-      internalID: 1156998804
+      spriteID: 0e515948d9b670e4ea3ba6fd74ba9e99
+      internalID: -71621556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Turn-Player-Sprite_2
+      name: Movement-Player-Sprite_2
       rect:
         serializedVersion: 2
         x: 128
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b7ba7016114f314badbb8bf191d3e3e
-      internalID: 22267515
+      spriteID: a5b63bd50d1e35649824cc0ccb5cb461
+      internalID: 1172268939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Turn-Player-Sprite_3
+      name: Movement-Player-Sprite_3
       rect:
         serializedVersion: 2
         x: 192
@@ -184,50 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0de5d8b48534e454f8372b3dec33eac6
-      internalID: -611732683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle-Turn-Player-Sprite_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62572d6312307a44ea0d37a2cd093370
-      internalID: -418496107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle-Turn-Player-Sprite_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c4a7cf99dcd5f645a126b4ebdbcee7c
-      internalID: -1811274116
+      spriteID: 7d3a137be5f84794d9749f06bbadbe99
+      internalID: -240430585
       vertices: []
       indices: 
       edges: []
@@ -243,12 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle-Turn-Player-Sprite_0: 1214359972
-      Idle-Turn-Player-Sprite_1: 1156998804
-      Idle-Turn-Player-Sprite_2: 22267515
-      Idle-Turn-Player-Sprite_3: -611732683
-      Idle-Turn-Player-Sprite_4: -418496107
-      Idle-Turn-Player-Sprite_5: -1811274116
+      Movement-Player-Sprite_0: -2014107993
+      Movement-Player-Sprite_1: -71621556
+      Movement-Player-Sprite_2: 1172268939
+      Movement-Player-Sprite_3: -240430585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
