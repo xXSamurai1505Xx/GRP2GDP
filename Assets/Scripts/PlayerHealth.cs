@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     private float currentHealth;
 
     // Reference to the HealthBar script
-    private HealthBar healthBar;
+    public HealthBar healthBar;
 
     private void Start()
     {
@@ -17,22 +17,7 @@ public class PlayerHealth : MonoBehaviour
         // Try to find the HealthBar script on the player
         healthBar = GetComponent<HealthBar>();
 
-        // If the HealthBar script is not directly attached, try to find it in children
-        if (healthBar == null)
-        {
-            healthBar = GetComponentInChildren<HealthBar>();
-        }
-
-        // Set the initial health on the health bar
-        if (healthBar != null)
-        {
-            healthBar.SetMaxHealth(maxHealth);
-            healthBar.SetHealth(currentHealth);
-        }
-        else
-        {
-            Debug.LogError("No HealthBar script found on the player or its children.");
-        }
+        
     }
 
     public void TakeDamage(float damage)
