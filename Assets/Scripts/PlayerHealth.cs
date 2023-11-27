@@ -36,4 +36,12 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player has died!");
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(10); 
+        }
+    }
 }
