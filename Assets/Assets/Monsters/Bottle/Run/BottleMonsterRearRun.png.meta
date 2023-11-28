@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27c9e41862b435149855932516c005d7
+guid: e8628a73f047c944892db35634663e9a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_0
+      name: BottleMonsterRearRun_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3892103fac22f74b94bab7d91c53da9
-      internalID: 428219154
+      spriteID: aa7781b72c6c01a49b6fd25eb639c3a7
+      internalID: 1050506094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_1
+      name: BottleMonsterRearRun_1
       rect:
         serializedVersion: 2
         x: 128
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67b238ae05f52e4458abae2184b750e3
-      internalID: -923337985
+      spriteID: 5c26bdae16929da4ab2a9afd7429f351
+      internalID: 33107797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_2
+      name: BottleMonsterRearRun_2
       rect:
         serializedVersion: 2
         x: 256
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcfdf1910520c4d419b21b4c02d3706a
-      internalID: 44421178
+      spriteID: d2f139e689699f94dba2237f3bb5cc1a
+      internalID: -640160493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_3
+      name: BottleMonsterRearRun_3
       rect:
         serializedVersion: 2
         x: 384
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bf79df7e5e34c14daf0d20e9226ffbb
-      internalID: -1842349659
+      spriteID: 84683429c5cbfe9408c008c4db524de2
+      internalID: -1359882967
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BottleMonsterFrontAttack_0: 428219154
-      BottleMonsterFrontAttack_1: -923337985
-      BottleMonsterFrontAttack_2: 44421178
-      BottleMonsterFrontAttack_3: -1842349659
+      BottleMonsterRearRun_0: 1050506094
+      BottleMonsterRearRun_1: 33107797
+      BottleMonsterRearRun_2: -640160493
+      BottleMonsterRearRun_3: -1359882967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

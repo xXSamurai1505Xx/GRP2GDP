@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27c9e41862b435149855932516c005d7
+guid: 3bfedef8ee44f26449c0fe33167e7f8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -91,23 +91,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_0
+      name: BottleMonsterFrontDeath_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +109,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3892103fac22f74b94bab7d91c53da9
-      internalID: 428219154
+      spriteID: b5f3323051c6c0c449b333bd5ed3cdcb
+      internalID: -870846469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_1
+      name: BottleMonsterFrontDeath_1
       rect:
         serializedVersion: 2
         x: 128
@@ -142,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67b238ae05f52e4458abae2184b750e3
-      internalID: -923337985
+      spriteID: aa52f8babace55848bd67a9a54323ddf
+      internalID: -198111188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_2
+      name: BottleMonsterFrontDeath_2
       rect:
         serializedVersion: 2
         x: 256
@@ -163,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcfdf1910520c4d419b21b4c02d3706a
-      internalID: 44421178
+      spriteID: 5c55452152257c347b9f6ac84206c5cb
+      internalID: -439547101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontAttack_3
+      name: BottleMonsterFrontDeath_3
       rect:
         serializedVersion: 2
         x: 384
@@ -184,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bf79df7e5e34c14daf0d20e9226ffbb
-      internalID: -1842349659
+      spriteID: 4fc027c6b884403419c1f5a41a425acf
+      internalID: -900790997
       vertices: []
       indices: 
       edges: []
@@ -201,10 +189,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BottleMonsterFrontAttack_0: 428219154
-      BottleMonsterFrontAttack_1: -923337985
-      BottleMonsterFrontAttack_2: 44421178
-      BottleMonsterFrontAttack_3: -1842349659
+      BottleMonsterFrontDeath_0: -870846469
+      BottleMonsterFrontDeath_1: -198111188
+      BottleMonsterFrontDeath_2: -439547101
+      BottleMonsterFrontDeath_3: -900790997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
