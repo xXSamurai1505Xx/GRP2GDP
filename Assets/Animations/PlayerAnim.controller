@@ -109,7 +109,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleAnim
+  m_Name: IdleFrontSword
   m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
@@ -123,7 +123,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3ca0f5be2184f894da6164b118e5a540, type: 2}
+  m_Motion: {fileID: 7400000, guid: 58cb28b873733734284201ca689f2d06, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -799,7 +799,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleRightAnim
+  m_Name: IdleRightSword
   m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
@@ -813,7 +813,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d154855b7ea4d3a49b898a887ee47024, type: 2}
+  m_Motion: {fileID: 7400000, guid: d294fa40b9cec1a4f8c2a215f61e4af8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -826,7 +826,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleBackAnim
+  m_Name: IdleBackSword
   m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
@@ -840,7 +840,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 73328456126957d42b30c760b494ab09, type: 2}
+  m_Motion: {fileID: 7400000, guid: 497cccb6277a08d42894a9cc219ca748, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -907,7 +907,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleLeftAnim
+  m_Name: IdleLeftSword
   m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
@@ -921,7 +921,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0361e6e61ee27f64781e4a37467ef8ff, type: 2}
+  m_Motion: {fileID: 7400000, guid: d4f39290d3f96ad48b318fda063dfcfe, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

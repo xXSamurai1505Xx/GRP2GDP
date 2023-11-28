@@ -2051,7 +2051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   attackRange: 3
-  attackCooldown: 2
+  timeBetweenAttacks: 2
 --- !u!212 &1181656430
 SpriteRenderer:
   m_ObjectHideFlags: 0
