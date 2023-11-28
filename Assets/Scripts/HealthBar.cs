@@ -12,6 +12,8 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         healthSlider = GetComponent<Slider>();
+        //healthSlider.direction = Slider.Direction.RightToLeft;
+
         fill.color = gradient.Evaluate(1f);
     }
 
@@ -20,7 +22,7 @@ public class HealthBar : MonoBehaviour
         //max value set in the inspector of the health bar
         healthSlider.maxValue = maxHealth;
         healthSlider.value = maxHealth;
-
+        //fill.color = gradient.Evaluate(1f);
 
     }
 
