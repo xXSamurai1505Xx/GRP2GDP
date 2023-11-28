@@ -8,6 +8,12 @@ public class PlayerAttack : MonoBehaviour
     public float attackConeAngle = 45f; // Angle in degrees
     public Button attackButton; // Reference to the UI button
 
+    public EnemyHealthSystem healthSystem;
+
+    
+    public float hitpoints;
+    public float maxHitPoints = 5;
+
     private Animator animator;
 
     private void Start()
@@ -16,6 +22,9 @@ public class PlayerAttack : MonoBehaviour
 
         // Add a listener to the button
         attackButton.onClick.AddListener(Attack);
+        
+       
+
     }
     private void OnDrawGizmos()
     {
@@ -59,14 +68,8 @@ public class PlayerAttack : MonoBehaviour
 
                 if (angleToEnemy <= attackConeAngle * 0.5f)
                 {
-                    // Attempt to get the EnemyHealth component
-                    EnemyHealth enemyHealth = collider.GetComponent<EnemyHealth>();
-
-                    // If the enemy has a health component, apply damage
-                    if (enemyHealth != null)
-                    {
-                        enemyHealth.TakeDamage(damageAmount);
-                    }
+                    healthSystem.TakenHitPoints(10);
+                    Debug.Log("Damage Taken");
                 }
             }
         }
@@ -93,4 +96,9 @@ public class PlayerAttack : MonoBehaviour
         // Return a default value if the animation is not found
         return 1f;
     }
+
+
+    
+
+
 }
