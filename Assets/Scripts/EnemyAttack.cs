@@ -1,26 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
     public float damageAmount = 10f;
     public float attackRange = 3f;
-    public float attackCooldown = 2f; // Cooldown between attacks
+    public float timeBetweenAttacks = 2f; // Time between each attack
 
-    private bool canAttack = true;
+    private float timeSinceLastAttack;
 
     private void Update()
     {
-        // Check if the player is in attack range and the enemy can attack
-        if (CanAttack() && canAttack)
+        // Update the time since the last attack
+        timeSinceLastAttack += Time.deltaTime;
+
+        // Check if the player is in attack range and enough time has passed since the last attack
+        if (CanAttack() && timeSinceLastAttack >= timeBetweenAttacks)
         {
             // Perform the attack
             Attack();
 
-            // Set cooldown to prevent rapid attacks
-            canAttack = false;
-            Invoke("ResetAttackCooldown", attackCooldown);
+            // Reset the timer
+            timeSinceLastAttack = 0f;
         }
     }
 
@@ -41,17 +41,10 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    private void ResetAttackCooldown()
-    {
-        canAttack = true;
-    }
-
     // Visualize the attack range in the scene view (optional)
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
-
-
 }
