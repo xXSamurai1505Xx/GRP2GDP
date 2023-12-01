@@ -2004,9 +2004,6 @@ MonoBehaviour:
   attackRadius: 2
   attackConeAngle: 45
   attackButton: {fileID: 902900144}
-  healthSystem: {fileID: 1181656433}
-  hitpoints: 0
-  maxHitPoints: 5
 --- !u!114 &1029764890
 MonoBehaviour:
   m_ObjectHideFlags: 0
