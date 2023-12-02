@@ -10,21 +10,13 @@ public class ItemPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && pickup == true)
+        if (collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
             //pickup = false;
         }
     }
 
-    public void PickupButtonUp()
-    {
-       pickup = true;
-    }
-
-    public void PickupButtonDown()
-    {
-        pickup = false;
-    }
+    
 
 }

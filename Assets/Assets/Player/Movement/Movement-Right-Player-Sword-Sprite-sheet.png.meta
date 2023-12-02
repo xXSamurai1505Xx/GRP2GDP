@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4728323a3483a7d4485f02a1a36f9e86
+guid: 5b8518770fa6a984e88f9ddad6cf9c2d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_0
+      name: Movement-Right-Player-Sword-Sprite-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95b90a430ff2dbc4199c225d8bdd2663
-      internalID: 819202392
+      spriteID: 6c0b34f5d65f2eb4d855aa40655426cb
+      internalID: -1490842412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_1
+      name: Movement-Right-Player-Sword-Sprite-sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3ffb4c1c6a3f4549a19ecb1ced4de9a
-      internalID: 1341547946
+      spriteID: 98ed4d1e56d57174690cc206868ad1ed
+      internalID: -138875930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_2
+      name: Movement-Right-Player-Sword-Sprite-sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48785dd6516c7b7479b8551ac6bbffc3
-      internalID: -550315618
+      spriteID: cfa90d1906e2fe14c9b0dc42588b06ca
+      internalID: 390225957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_3
+      name: Movement-Right-Player-Sword-Sprite-sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61487f7cf70047048a2ff377c30f8cf3
-      internalID: -1077669955
+      spriteID: 8455fbfa8cfec7b46b62fd50583c62d6
+      internalID: -2047385125
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead-Front-Player-Sprite-sheet_0: 819202392
-      Dead-Front-Player-Sprite-sheet_1: 1341547946
-      Dead-Front-Player-Sprite-sheet_2: -550315618
-      Dead-Front-Player-Sprite-sheet_3: -1077669955
+      Movement-Right-Player-Sword-Sprite-sheet_0: -1490842412
+      Movement-Right-Player-Sword-Sprite-sheet_1: -138875930
+      Movement-Right-Player-Sword-Sprite-sheet_2: 390225957
+      Movement-Right-Player-Sword-Sprite-sheet_3: -2047385125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
