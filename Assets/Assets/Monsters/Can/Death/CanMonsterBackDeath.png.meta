@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bfedef8ee44f26449c0fe33167e7f8f
+guid: d0c9c903e4024b14d8fc98c1c52debc8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BottleMonsterFrontDeath_0
+      name: CanMonsterBackDeath_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5f3323051c6c0c449b333bd5ed3cdcb
-      internalID: -870846469
+      spriteID: e06d772e3ebc3e446ae644abbf2305ca
+      internalID: 1543428976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontDeath_1
+      name: CanMonsterBackDeath_1
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 128
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa52f8babace55848bd67a9a54323ddf
-      internalID: -198111188
+      spriteID: b3cb48424ca652c458962cad672914ef
+      internalID: -126282172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontDeath_2
+      name: CanMonsterBackDeath_2
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 128
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c55452152257c347b9f6ac84206c5cb
-      internalID: -439547101
+      spriteID: 13ccb1bba3e26204388ad141e3beee82
+      internalID: 733370630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottleMonsterFrontDeath_3
+      name: CanMonsterBackDeath_3
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 128
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc027c6b884403419c1f5a41a425acf
-      internalID: -900790997
+      spriteID: 0d5547e40b462ab468c2add1a6f90ec0
+      internalID: -822602364
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BottleMonsterFrontDeath_0: -870846469
-      BottleMonsterFrontDeath_1: -198111188
-      BottleMonsterFrontDeath_2: -439547101
-      BottleMonsterFrontDeath_3: -900790997
+      CanMonsterBackDeath_0: 1543428976
+      CanMonsterBackDeath_1: -126282172
+      CanMonsterBackDeath_2: 733370630
+      CanMonsterBackDeath_3: -822602364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
