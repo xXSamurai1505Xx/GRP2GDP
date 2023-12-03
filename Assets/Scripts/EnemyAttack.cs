@@ -8,6 +8,9 @@ public class EnemyAttack : MonoBehaviour
 
     private float timeSinceLastAttack;
 
+    
+
+    
     private void Update()
     {
         // Update the time since the last attack
@@ -17,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
         if (CanAttack() && timeSinceLastAttack >= timeBetweenAttacks)
         {
             // Perform the attack
-            Attack();
+            
 
             // Reset the timer
             timeSinceLastAttack = 0f;
@@ -31,15 +34,7 @@ public class EnemyAttack : MonoBehaviour
         return playerCollider != null;
     }
 
-    private void Attack()
-    {
-        // Deal damage to the player
-        PlayerHealth playerHealth = FindObjectOfType<PlayerHealth>();
-        if (playerHealth != null)
-        {
-            playerHealth.TakeDamage(damageAmount);
-        }
-    }
+    
 
     // Visualize the attack range in the scene view (optional)
     private void OnDrawGizmosSelected()
@@ -47,4 +42,8 @@ public class EnemyAttack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
+
+
+    
+
 }

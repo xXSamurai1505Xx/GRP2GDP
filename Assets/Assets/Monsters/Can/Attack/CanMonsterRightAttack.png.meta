@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4728323a3483a7d4485f02a1a36f9e86
+guid: 73d2b7485a9f8aa45adb71d55d12f9c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,12 +107,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_0
+      name: CanMonsterRightAttack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 128
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,40 +121,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95b90a430ff2dbc4199c225d8bdd2663
-      internalID: 819202392
+      spriteID: c0bf88d5163601d49b03258de58903da
+      internalID: 1649970494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3ffb4c1c6a3f4549a19ecb1ced4de9a
-      internalID: 1341547946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_2
+      name: CanMonsterRightAttack_1
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 64
+        width: 128
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,19 +142,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48785dd6516c7b7479b8551ac6bbffc3
-      internalID: -550315618
+      spriteID: 66645978d1f2a9b429899b4aa074c493
+      internalID: 1150559051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead-Front-Player-Sprite-sheet_3
+      name: CanMonsterRightAttack_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 256
         y: 0
-        width: 64
+        width: 128
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,8 +163,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61487f7cf70047048a2ff377c30f8cf3
-      internalID: -1077669955
+      spriteID: a8bbcd712d8b5114f89b52ff4988a51c
+      internalID: 942273159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanMonsterRightAttack_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0b511ddf82af64f848a9485b3ddb34
+      internalID: -2014810699
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead-Front-Player-Sprite-sheet_0: 819202392
-      Dead-Front-Player-Sprite-sheet_1: 1341547946
-      Dead-Front-Player-Sprite-sheet_2: -550315618
-      Dead-Front-Player-Sprite-sheet_3: -1077669955
+      CanMonsterRightAttack_0: 1649970494
+      CanMonsterRightAttack_1: 1150559051
+      CanMonsterRightAttack_2: 942273159
+      CanMonsterRightAttack_3: -2014810699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
