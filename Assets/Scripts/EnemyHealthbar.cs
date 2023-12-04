@@ -16,6 +16,14 @@ public class EnemyHealthbar : MonoBehaviour
         //healthSlider.direction = Slider.Direction.RightToLeft;
 
         //fill.color = gradient.Evaluate(1f);
+        if (healthSlider == null)
+        {
+            Debug.LogError("Slider component not found on GameObject: " + gameObject.name);
+        }
+        else
+        {
+            Debug.Log("HealthSlider component found successfully.");
+        }
     }
 
     public void SetMaxHealth(float maxHealth)

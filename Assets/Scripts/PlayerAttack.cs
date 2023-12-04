@@ -8,12 +8,6 @@ public class PlayerAttack : MonoBehaviour
     public float attackConeAngle = 45f; // Angle in degrees
     public Button attackButton; // Reference to the UI button
 
-    public EnemyHealthSystem healthSystem;
-
-    
-    public float hitpoints;
-    public float maxHitPoints = 5;
-
     private Animator animator;
 
     private void Start()
@@ -22,23 +16,6 @@ public class PlayerAttack : MonoBehaviour
 
         // Add a listener to the button
         attackButton.onClick.AddListener(Attack);
-        
-       
-
-    }
-    private void OnDrawGizmos()
-    {
-        // Visualize the attack cone in the Scene view
-        Gizmos.color = Color.red;
-        Vector2 direction = transform.right;
-        Vector2 arcStart = Quaternion.Euler(0, 0, -attackConeAngle * 0.5f) * direction;
-        Gizmos.DrawRay(transform.position, arcStart * attackRadius);
-
-        for (float i = -attackConeAngle * 0.5f + 5f; i < attackConeAngle * 0.5f; i += 5f)
-        {
-            Vector2 rayDirection = Quaternion.Euler(0, 0, i) * direction;
-            Gizmos.DrawRay(transform.position, rayDirection * attackRadius);
-        }
     }
 
     private void Attack()
@@ -68,8 +45,13 @@ public class PlayerAttack : MonoBehaviour
 
                 if (angleToEnemy <= attackConeAngle * 0.5f)
                 {
-                    healthSystem.TakenHitPoints(10);
-                    Debug.Log("Damage Taken");
+                    // Check if the collider has an EnemyHealthSystem component
+                    EnemyHealthSystem healthSystem = collider.GetComponent<EnemyHealthSystem>();
+                    if (healthSystem != null)
+                    {
+                        healthSystem.TakenHitPoints(damageAmount);
+                        Debug.Log("Damage Taken");
+                    }
                 }
             }
         }
@@ -96,9 +78,4 @@ public class PlayerAttack : MonoBehaviour
         // Return a default value if the animation is not found
         return 1f;
     }
-
-
-    
-
-
 }

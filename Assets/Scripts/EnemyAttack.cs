@@ -7,10 +7,13 @@ public class EnemyAttack : MonoBehaviour
     public float timeBetweenAttacks = 2f; // Time between each attack
 
     private float timeSinceLastAttack;
+    public Animator animator;
 
-    
 
-    
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         // Update the time since the last attack
@@ -20,7 +23,10 @@ public class EnemyAttack : MonoBehaviour
         if (CanAttack() && timeSinceLastAttack >= timeBetweenAttacks)
         {
             // Perform the attack
-            
+            if (animator != null)
+            {
+                animator.SetTrigger("IsAttack");
+            }
 
             // Reset the timer
             timeSinceLastAttack = 0f;
@@ -31,6 +37,7 @@ public class EnemyAttack : MonoBehaviour
     {
         // Check if the player is within the attack range
         Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, attackRange, LayerMask.GetMask("Player"));
+
         return playerCollider != null;
     }
 
