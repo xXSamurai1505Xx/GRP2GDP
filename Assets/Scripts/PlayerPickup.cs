@@ -4,28 +4,32 @@ using UnityEngine;
 
 public class PlayerPickup : MonoBehaviour
 {
-    public bool pickup;
+    private PlayerInventory inventory;
+    public GameObject itemButton;
 
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (pickup)
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
         {
-            Destroy(GameObject.FindWithTag("Item"));
-            pickup = false;
+            for(int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.isFull[i] == false)
+                {
+                    
+                    inventory.isFull[i] = true;
+                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                    Destroy(gameObject);
+                    break;
+                }
+            }
         }
     }
 
-
-    public void PickupButtonUp()
-    {
-        pickup = true;
-    }
-
-    public void PickupButtonDown()
-    {
-        pickup = false; 
-    }
 
 }
