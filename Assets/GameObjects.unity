@@ -2742,6 +2742,7 @@ MonoBehaviour:
   healthSlider: {fileID: 0}
   fill: {fileID: 0}
   spawnPrefab: {fileID: 5057996284861572283, guid: 2ff164c7ed0fd244b8594f330244eb11, type: 3}
+  animator: {fileID: 0}
 --- !u!1 &1394371939
 GameObject:
   m_ObjectHideFlags: 0

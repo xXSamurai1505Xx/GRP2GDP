@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3fe19efb2bd55842a64f706c04c4dab
+guid: 1d9c835bbb747b44b85ca6213e1502f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead-Left-Sword-Player-Sprite-sheet_0
+      name: Dead-Left-Sword-Player-Sprite-sheet-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,8 +121,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 089f4a1b2918c1d4790853fb5d6ecb5c
-      internalID: 2021456908
+      spriteID: 2a165ecc5e1be924f82252c947982ea1
+      internalID: 71029720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead-Left-Sword-Player-Sprite-sheet-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614eb9af36a0b2d4b9c6a9b4a4aaf9a1
+      internalID: 750205200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead-Left-Sword-Player-Sprite-sheet-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ccfa9f802a2cd43a3010f52b926345
+      internalID: -355096711
       vertices: []
       indices: 
       edges: []
@@ -138,7 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead-Left-Sword-Player-Sprite-sheet_0: 2021456908
+      Dead-Left-Sword-Player-Sprite-sheet-sheet_0: 71029720
+      Dead-Left-Sword-Player-Sprite-sheet-sheet_1: 750205200
+      Dead-Left-Sword-Player-Sprite-sheet-sheet_2: -355096711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
