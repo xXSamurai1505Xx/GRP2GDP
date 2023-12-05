@@ -29,7 +29,7 @@ public class EnemyAttack : MonoBehaviour
             }
 
             // Reset the timer
-            timeSinceLastAttack = 0f;
+            timeSinceLastAttack = 0f;   
         }
     }
 
