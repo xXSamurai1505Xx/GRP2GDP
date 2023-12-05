@@ -8,12 +8,23 @@ public class ItemPickup : MonoBehaviour
 
     public bool pickup;
 
+    [HideInInspector]
+    public int itemNumber = 0;
+
+
+
+    private void Start()
+    {
+        pickup = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Item" && pickup == true)
         {
-            Destroy(gameObject);
-            //pickup = false;
+            Destroy(collision.gameObject);
+            itemNumber += 1;
+
         }
     }
 
