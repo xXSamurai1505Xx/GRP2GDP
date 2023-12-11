@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1bd2cec21bf8624d99bf31c19e62966
+guid: 93f404f39188de44e95d35b560e45c4b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead-Right-Sword-Player-Sprite-sheet_0
+      name: Dead-Back-Sword-Player-Sprite-sheet-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,8 +121,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f181185b4f8d7243ad13ff9dca85fde
-      internalID: 1827743373
+      spriteID: faf51bf6d75d8e94eb21a66c669313f2
+      internalID: 499121342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead-Back-Sword-Player-Sprite-sheet-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ee3c8a9295ec643ae17412146fcab2
+      internalID: -61049580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead-Back-Sword-Player-Sprite-sheet-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1d59488c573b24cb7f8e369b2e4cfd
+      internalID: -1409778230
       vertices: []
       indices: 
       edges: []
@@ -138,7 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead-Right-Sword-Player-Sprite-sheet_0: 1827743373
+      Dead-Back-Sword-Player-Sprite-sheet-sheet_0: 499121342
+      Dead-Back-Sword-Player-Sprite-sheet-sheet_1: -61049580
+      Dead-Back-Sword-Player-Sprite-sheet-sheet_2: -1409778230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

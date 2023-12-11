@@ -14,7 +14,7 @@ public class EnemyHealthSystem : MonoBehaviour
     public GameObject spawnPrefab;
 
     // Reference to the Animator component
-    private Animator animator;
+    public Animator animator;
 
     private void Start()
     {

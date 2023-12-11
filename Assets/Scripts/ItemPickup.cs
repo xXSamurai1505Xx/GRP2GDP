@@ -6,28 +6,34 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
 
-    public bool pickup;
-
-    [HideInInspector]
-    public int itemNumber = 0;
-
+    private PlayerInventory inventory;
+    public GameObject itemButton;
 
 
     private void Start()
     {
-        pickup = true;
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Item" && pickup == true)
+        if (collision.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
-            itemNumber += 1;
+            for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.isFull[i] == false)
+                {
 
+                    inventory.isFull[i] = true;
+                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                    Destroy(gameObject);
+                    break;
+                }
+            }
         }
     }
 
-    
+
+
 
 }
