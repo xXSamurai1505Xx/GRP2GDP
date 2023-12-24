@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
     public float attackRadius = 2f;
     public float attackConeAngle = 45f; // Angle in degrees
     public Button attackButton; // Reference to the UI button
-
+    public Vector2 lastMoveDirection;
     private Animator animator;
 
     private void Start()
@@ -22,6 +22,7 @@ public class PlayerAttack : MonoBehaviour
     {
         // Set the IsAttack parameter to true to trigger the attack animation
         animator.SetBool("IsAttack", true);
+        DetermineAttackDirection();
 
         // Perform the attack action after a delay matching the animation duration
         float animationDuration = GetAnimationDuration("AttackAnimationName");
@@ -41,9 +42,12 @@ public class PlayerAttack : MonoBehaviour
             {
                 // Check if the enemy is within the cone angle
                 Vector2 directionToEnemy = (collider.transform.position - transform.position).normalized;
-                float angleToEnemy = Vector2.Angle(transform.right, directionToEnemy);
 
-                if (angleToEnemy <= attackConeAngle * 0.5f)
+                // Calculate the angle between the player's facing direction and the direction to the enemy
+                float angleToEnemy = Vector2.SignedAngle(lastMoveDirection, directionToEnemy);
+
+                // Check if the enemy is within the attack cone angle
+                if (Mathf.Abs(angleToEnemy) <= attackConeAngle * 0.5f)
                 {
                     // Check if the collider has an EnemyHealthSystem component
                     EnemyHealthSystem healthSystem = collider.GetComponent<EnemyHealthSystem>();
@@ -59,7 +63,42 @@ public class PlayerAttack : MonoBehaviour
         // Set the IsAttack parameter back to false to end the attack animation
         animator.SetBool("IsAttack", false);
     }
-
+    private void DetermineAttackDirection()
+    {
+        // Determine the attack direction based on the last movement direction
+        if (lastMoveDirection == Vector2.up)
+        {
+            // Set the attack direction parameters in the animator
+            animator.SetBool("AttackUp", true);
+            animator.SetBool("AttackDown", false);
+            animator.SetBool("AttackLeft", false);
+            animator.SetBool("AttackRight", false);
+        }
+        else if (lastMoveDirection == Vector2.down)
+        {
+            // Set the attack direction parameters in the animator
+            animator.SetBool("AttackUp", false);
+            animator.SetBool("AttackDown", true);
+            animator.SetBool("AttackLeft", false);
+            animator.SetBool("AttackRight", false);
+        }
+        else if (lastMoveDirection == Vector2.left)
+        {
+            // Set the attack direction parameters in the animator
+            animator.SetBool("AttackUp", false);
+            animator.SetBool("AttackDown", false);
+            animator.SetBool("AttackLeft", true);
+            animator.SetBool("AttackRight", false);
+        }
+        else if (lastMoveDirection == Vector2.right)
+        {
+            // Set the attack direction parameters in the animator
+            animator.SetBool("AttackUp", false);
+            animator.SetBool("AttackDown", false);
+            animator.SetBool("AttackLeft", false);
+            animator.SetBool("AttackRight", true);
+        }
+    }
     private float GetAnimationDuration(string animationName)
     {
         // Get the duration of the specified animation

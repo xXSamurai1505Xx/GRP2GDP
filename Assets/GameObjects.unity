@@ -2590,6 +2590,7 @@ GameObject:
   - component: {fileID: 1181656429}
   - component: {fileID: 1181656432}
   - component: {fileID: 1181656433}
+  - component: {fileID: 1181656434}
   m_Layer: 0
   m_Name: BottleMonsterFrontIdle
   m_TagString: Enemy
@@ -2742,7 +2743,28 @@ MonoBehaviour:
   healthSlider: {fileID: 0}
   fill: {fileID: 0}
   spawnPrefab: {fileID: 5057996284861572283, guid: 2ff164c7ed0fd244b8594f330244eb11, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 1181656434}
+--- !u!95 &1181656434
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181656428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 165fd3e29be8f5c48b29bd16f3cab269, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1394371939
 GameObject:
   m_ObjectHideFlags: 0

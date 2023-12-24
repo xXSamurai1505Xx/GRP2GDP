@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private InputActions input; // Adjust the type here
     private Vector2 moveVector = Vector2.zero;
+    public Vector2 lastMoveDirection = Vector2.up; // Make it public to access in other scripts
     private Rigidbody2D rb = null;
     private float speed = 10f;
 
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnMovementPerformed(InputAction.CallbackContext value)
     {
         moveVector = value.ReadValue<Vector2>();
+        lastMoveDirection = moveVector.normalized;
     }
 
     private void OnMovementCancelled(InputAction.CallbackContext value)
@@ -61,4 +63,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", horizontalMovement);
         animator.SetFloat("Vertical", verticalMovement);
     }
+
+
 }
