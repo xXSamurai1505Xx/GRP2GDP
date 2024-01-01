@@ -6,21 +6,25 @@ public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 100f;
     [SerializeField] private float currentHealth;
+    [SerializeField] private HealthBar healthBar;
+    [SerializeField] private Animator animator; // Reference to the Animator component
 
-    // Reference to the HealthBar script
-    [SerializeField] HealthBar healthBar;
+    private bool isDead = false; // Flag to check if the player is dead
 
     private void Start()
     {
         currentHealth = maxHealth;
 
-        // If the HealthBar script is not directly attached, try to find it in children
         if (healthBar == null)
         {
             healthBar = GetComponentInChildren<HealthBar>();
         }
 
-        // Set the initial health on the health bar
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
+
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(maxHealth);
@@ -30,15 +34,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.LogError("No HealthBar script found on the player or its children.");
         }
-
-
     }
 
     public void TakeDamage(float damage)
     {
+        if (isDead) return; // If the player is already dead, do nothing
+
         currentHealth -= damage;
 
-        // Update the health bar
         if (healthBar != null)
         {
             healthBar.SetHealth(currentHealth);
@@ -46,19 +49,35 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            // Handle player death (e.g., restart level, show game over screen)
-            Debug.Log("Player has died!");
+            Die();
         }
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Die()
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            TakeDamage(10f);
-            healthBar.SetHealth((float)currentHealth);
-        }
-    }
+        isDead = true;
 
+        // Trigger the "IsDead" animation
+        if (animator != null)
+        {
+            animator.SetTrigger("IsDead");
+        }
+
+        // Freeze player controls (you need to implement your own logic for this)
+        // For example, if you have a script handling player movement, you can disable it
+        // or set a flag to stop the player from moving.
+        // Example: GetComponent<PlayerMovement>().enabled = false;
+
+        // Handle other death-related actions here (e.g., restart level, show game over screen)
+        StartCoroutine(FreezeGameAfterDelay());
+    }
+    private IEnumerator FreezeGameAfterDelay()
+    {
+        yield return new WaitForSeconds(1f);  // Adjust the delay time as needed
+
+        // Freeze the game or perform any other actions after the delay
+        Time.timeScale = 0f;  // This freezes the game
+
+        Debug.Log("Game has been frozen after player death!");
+    }
 }

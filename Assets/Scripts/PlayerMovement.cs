@@ -5,23 +5,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private InputActions input; // Adjust the type here
+    private InputActions input;
     private Vector2 moveVector = Vector2.zero;
-    public Vector2 lastMoveDirection = Vector2.up; // Make it public to access in other scripts
+    public Vector2 lastMoveDirection = Vector2.up;
     private Rigidbody2D rb = null;
     private float speed = 10f;
-
-    // New parameters for Animator
-    private float horizontalMovement = 0f;
-    private float verticalMovement = 0f;
-
     private Animator animator;
+    private bool isDead = false; // Flag to check if the player is dead
 
     private void Awake()
     {
         input = new InputActions();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        rb.freezeRotation = true;
     }
 
     private void OnEnable()
@@ -38,19 +35,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = moveVector * speed;
+        if (!isDead)
+        {
+            rb.velocity = moveVector * speed;
 
-        // Update Animator parameters
-        horizontalMovement = moveVector.x;
-        verticalMovement = moveVector.y;
-        animator.SetFloat("Horizontal", horizontalMovement);
-        animator.SetFloat("Vertical", verticalMovement);
+            // Update Animator parameters
+            animator.SetFloat("Horizontal", moveVector.x);
+            animator.SetFloat("Vertical", moveVector.y);
+        }
+        else
+        {
+            // If the player is dead, freeze the controls
+            rb.velocity = Vector2.zero;
+        }
     }
 
     private void OnMovementPerformed(InputAction.CallbackContext value)
     {
-        moveVector = value.ReadValue<Vector2>();
-        lastMoveDirection = moveVector.normalized;
+        moveVector = value.ReadValue<Vector2>().normalized;
+        lastMoveDirection = moveVector;
     }
 
     private void OnMovementCancelled(InputAction.CallbackContext value)
@@ -58,11 +61,13 @@ public class PlayerMovement : MonoBehaviour
         moveVector = Vector2.zero;
 
         // Reset Animator parameters when movement is cancelled (back to idle)
-        horizontalMovement = 0f;
-        verticalMovement = 0f;
-        animator.SetFloat("Horizontal", horizontalMovement);
-        animator.SetFloat("Vertical", verticalMovement);
+        animator.SetFloat("Horizontal", 0f);
+        animator.SetFloat("Vertical", 0f);
     }
 
-
+    // Add a method to set the isDead flag from the PlayerHealth script
+    public void SetPlayerDead(bool dead)
+    {
+        isDead = dead;
+    }
 }

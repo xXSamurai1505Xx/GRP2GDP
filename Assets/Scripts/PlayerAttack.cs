@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using System.Collections;
+using System.Collections.Generic;
 public class PlayerAttack : MonoBehaviour
 {
     public float damageAmount = 20f;
@@ -10,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     public Vector2 lastMoveDirection;
     private Animator animator;
 
+    private bool canAttack = true; // Variable to track whether the player can currently attack
+    public float attackCooldown = 2f; // Cooldown time between attacks
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -18,16 +21,25 @@ public class PlayerAttack : MonoBehaviour
         attackButton.onClick.AddListener(Attack);
     }
 
+
     private void Attack()
     {
-        // Set the IsAttack parameter to true to trigger the attack animation
-        animator.SetBool("IsAttack", true);
-        DetermineAttackDirection();
+        // Check if the player can currently attack
+        if (canAttack)
+        {
+            // Set the IsAttack parameter to true to trigger the attack animation
+            animator.SetBool("IsAttack", true);
+            DetermineAttackDirection();
 
-        // Perform the attack action after a delay matching the animation duration
-        float animationDuration = GetAnimationDuration("AttackAnimationName");
-        Invoke("DealAreaDamage", animationDuration);
+            // Perform the attack action after a delay matching the animation duration
+            float animationDuration = GetAnimationDuration("AttackAnimationName");
+            Invoke("DealAreaDamage", animationDuration);
+
+            // Start the cooldown
+            StartCoroutine(AttackCooldown());
+        }
     }
+
 
     private void DealAreaDamage()
     {
@@ -117,4 +129,16 @@ public class PlayerAttack : MonoBehaviour
         // Return a default value if the animation is not found
         return 1f;
     }
+    private IEnumerator AttackCooldown()
+    {
+        // Disable the attack button during the cooldown
+        canAttack = false;
+
+        // Wait for the cooldown duration
+        yield return new WaitForSeconds(attackCooldown);
+
+        // Enable the attack button after the cooldown
+        canAttack = true;
+    }
 }
+
