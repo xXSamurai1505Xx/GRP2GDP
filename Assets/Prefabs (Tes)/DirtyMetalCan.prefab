@@ -158,4 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   washBasin: {fileID: 0}
+  player: {fileID: 0}
   cleanObject: {fileID: 8775844662913646513, guid: 6ca0c015b1a867f4fb6074f2b3323818, type: 3}

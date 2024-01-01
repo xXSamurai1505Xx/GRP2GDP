@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1122143507481205141, guid: fc44eb12f2139b645a80e2f6c49f71ad, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WashController, Assembly-CSharp
         m_MethodName: washObject
         m_Mode: 1

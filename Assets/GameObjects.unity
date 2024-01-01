@@ -3092,7 +3092,7 @@ MonoBehaviour:
   maxRaycastDistance: 8
   originalPosition: {fileID: 1181656431}
   returnCooldown: 3
-  playerHealth: {fileID: 1029764890}
+  playerHealth: {fileID: 0}
 --- !u!50 &1181656436
 Rigidbody2D:
   serializedVersion: 4
@@ -4011,10 +4011,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1122143507481205141, guid: fc44eb12f2139b645a80e2f6c49f71ad, type: 3}
-      propertyPath: washBasin
-      value: 
-      objectReference: {fileID: 464270223}
     - target: {fileID: 7316481202871783001, guid: fc44eb12f2139b645a80e2f6c49f71ad, type: 3}
       propertyPath: m_RootOrder
       value: 5

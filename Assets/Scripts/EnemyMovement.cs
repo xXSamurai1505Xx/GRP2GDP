@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
             float distanceToPlayer = Vector2.Distance(transform.position, playerPosition);
 
-            Debug.Log("Distance to Player: " + distanceToPlayer);
+            //Debug.Log("Distance to Player: " + distanceToPlayer);
 
             if (distanceToPlayer <= detectionRadius)
             {
