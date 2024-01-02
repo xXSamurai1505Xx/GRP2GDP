@@ -49,6 +49,7 @@ public class WashStation : MonoBehaviour
             // Destroy all found buttons (you can adjust this logic based on your needs)
             foreach (var dirtyButton in dirtyButtons)
             {
+                Debug.Log("Destroying dirty button...");
                 Destroy(dirtyButton);
             }
 
