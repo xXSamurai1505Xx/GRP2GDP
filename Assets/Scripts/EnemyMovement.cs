@@ -49,12 +49,10 @@ public class EnemyMovement : MonoBehaviour
             float distanceToPlayer = Vector2.Distance(transform.position, playerPosition);
 
             Debug.Log("Distance to Player: " + distanceToPlayer);
-
-            if (distanceToPlayer <= detectionRadius)
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPosition - (Vector2)transform.position, maxRaycastDistance, LayerMask.GetMask("Obstacle"));
+            if (hit.collider == null)  // Change from '=' to '=='
             {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPosition - (Vector2)transform.position, maxRaycastDistance, LayerMask.GetMask("Obstacle"));
-
-                if (hit.collider == null)
+                if (distanceToPlayer <= detectionRadius)
                 {
                     if (distanceToPlayer <= attackRange)
                     {
@@ -73,26 +71,26 @@ public class EnemyMovement : MonoBehaviour
                 }
                 else
                 {
-                    StopMovement();
+                    if (!isReturning)
+                    {
+                        isReturning = true;
+                        returnCooldownTimer = returnCooldown;
+                        rb.isKinematic = true;
+                    }
+
+                    if (returnCooldownTimer > 0f)
+                    {
+                        returnCooldownTimer -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        ReturnToOriginalPosition();
+                    }
                 }
             }
             else
             {
-                if (!isReturning)
-                {
-                    isReturning = true;
-                    returnCooldownTimer = returnCooldown;
-                    rb.isKinematic = true;
-                }
-
-                if (returnCooldownTimer > 0f)
-                {
-                    returnCooldownTimer -= Time.deltaTime;
-                }
-                else
-                {
-                    ReturnToOriginalPosition();
-                }
+                StopMovement();
             }
         }
 
