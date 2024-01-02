@@ -14,11 +14,12 @@ public class ButtonCheck : MonoBehaviour
         buttonClicked = true;
 
         
+        
     }
 
     public void disactivateWash()
     {
-        buttonClicked = false;
+        buttonClicked = !buttonClicked;
 
 
     }
