@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4653601883151611863}
   - component: {fileID: 5579419508544106846}
   - component: {fileID: 5003078012514493234}
+  - component: {fileID: 7775326009423757137}
   m_Layer: 0
   m_Name: CleanBottle
   m_TagString: Untagged
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5569263730851958584, guid: 57815a1bea272e14bb3ec1e201218e84, type: 3}
+--- !u!114 &7775326009423757137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2455866119950121608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da095ca8cf8a4454d84f34a3a76e0518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonCheck: {fileID: 78740994246599186, guid: c1dd5016d15957948a4f7bad7c49344a, type: 3}

@@ -36,7 +36,7 @@ public class WashStation : MonoBehaviour
 
     public void wash()
     {
-        if (Vector3.Distance(spawnArea.position, playerPosition.position) < 4f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated )
+        if (Vector3.Distance(spawnArea.position, playerPosition.position) < 2f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated )
         {
             Debug.Log("Activated");
 
@@ -51,7 +51,7 @@ public class WashStation : MonoBehaviour
             // Destroy all found buttons (you can adjust this logic based on your needs)
             foreach (var dirtyButton in dirtyButtons)
             {
-                Debug.Log("Destroying dirty button...");
+                //Debug.Log("Destroying dirty button...");
                 Destroy(dirtyButton);
             }
 

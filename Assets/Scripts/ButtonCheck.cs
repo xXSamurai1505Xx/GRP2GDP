@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonCheck : MonoBehaviour
 {
     public bool buttonClicked = false;
-
+    public bool plasticButton = false;
 
     
 
@@ -24,5 +24,16 @@ public class ButtonCheck : MonoBehaviour
 
     }
 
+
+    public void upPlastic()
+    {
+        plasticButton = false;
+    }
+
+
+    public void downPlastic()
+    {
+        plasticButton = true;
+    }
 
 }
