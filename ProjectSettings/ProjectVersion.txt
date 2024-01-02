@@ -1,2 +1,12 @@
+<<<<<<< HEAD
 m_EditorVersion: 2022.3.1f1
 m_EditorVersionWithRevision: 2022.3.1f1 (f18e0c1b5784)
+=======
+<<<<<<< Updated upstream
+m_EditorVersion: 2022.2.15f1
+m_EditorVersionWithRevision: 2022.2.15f1 (30d813e1a2a9)
+=======
+m_EditorVersion: 2022.3.11f1
+m_EditorVersionWithRevision: 2022.3.11f1 (d00248457e15)
+>>>>>>> Stashed changes
+>>>>>>> f69e0f8c6e7380adc12bcbb630c5bbf4f02f2b96
