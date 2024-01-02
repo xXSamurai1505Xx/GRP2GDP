@@ -487,6 +487,7 @@ Canvas:
 --- !u!1 &154224239
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -554,6 +555,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2157176433349802968, guid: f5185f296bc0ae740b51121e6870aeb1, type: 3}
+=======
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2455866119950121608, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_Name
+      value: CleanBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1921383
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7058582
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+>>>>>>> parent of cb8d79f (Washing Station Complete)
 --- !u!1 &306728223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1146,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495681863
@@ -1286,6 +1348,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1529666505}
   m_SourcePrefab: {fileID: 100100000, guid: fc44eb12f2139b645a80e2f6c49f71ad, type: 3}
+=======
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of cb8d79f (Washing Station Complete)
 --- !u!1 &594597936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,6 +1703,131 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670034146}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
+--- !u!1001 &685954636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2519854965522778820, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_Name
+      value: clean metal can sprite 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.1982136
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6537523
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694397054627193047, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a596ed8c934cccb4291ad4e1255af43a, type: 3}
+--- !u!1001 &694831403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.429218
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5013487
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108690092108248840, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+      propertyPath: m_Name
+      value: DirtyBottle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
+>>>>>>> parent of cb8d79f (Washing Station Complete)
 --- !u!1 &708326262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,7 +3158,11 @@ Transform:
   m_Children:
   - {fileID: 939188361}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 8
+>>>>>>> parent of cb8d79f (Washing Station Complete)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1029764885
 MonoBehaviour:
@@ -3444,6 +3639,7 @@ Rigidbody2D:
 --- !u!1001 &1215023785
 PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -3505,6 +3701,36 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 413867594}
   m_SourcePrefab: {fileID: 100100000, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+=======
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329888670}
+  m_Layer: 0
+  m_Name: SpawnAreaForClean
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1329888670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329888669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.84, y: -0.85, z: -0.33602697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of cb8d79f (Washing Station Complete)
 --- !u!1 &1394371939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,6 +3869,7 @@ CanvasRenderer:
 --- !u!1 &1440144609
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4034,6 +4261,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554763113}
   m_CullTransparentMesh: 1
+=======
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4035632118205845219, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_Name
+      value: dirty metal can
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7357781
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7579641
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ba688667483445468de462b224442c7, type: 3}
+>>>>>>> parent of cb8d79f (Washing Station Complete)
 --- !u!1 &1644407726
 GameObject:
   m_ObjectHideFlags: 0
