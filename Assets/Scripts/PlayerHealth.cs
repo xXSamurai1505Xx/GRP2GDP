@@ -10,8 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Animator animator; // Reference to the Animator component
 
     private bool isDead = false; // Flag to check if the player is dead
-    public GameObject gameOverScreen;
-    public GameObject gameUIScreen;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -80,8 +79,5 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0f;  // This freezes the game
 
         Debug.Log("Game has been frozen after player death!");
-        gameUIScreen.SetActive(false);
-        gameOverScreen.SetActive(true);
-
     }
 }
