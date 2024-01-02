@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class WashStation : MonoBehaviour
+public class WashingStation : MonoBehaviour
 {
     public Transform spawnArea;
     public GameObject cleanObject;
@@ -20,23 +19,21 @@ public class WashStation : MonoBehaviour
 
 
 
-    
-
     private void Update()
     {
 
         wash();
-        
+
     }
 
 
-   
+
 
 
 
     public void wash()
     {
-        if (Vector3.Distance(spawnArea.position, playerPosition.position) < 4f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated )
+        if (Vector3.Distance(spawnArea.position, playerPosition.position) < 4f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated)
         {
             Instantiate(cleanObject, spawnArea.position, Quaternion.identity);
 
@@ -57,6 +54,4 @@ public class WashStation : MonoBehaviour
 
         }
     }
-
-
 }

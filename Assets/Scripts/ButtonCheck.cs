@@ -7,22 +7,22 @@ public class ButtonCheck : MonoBehaviour
     public bool buttonClicked = false;
 
 
-    
+
 
     public void activateWash()
     {
         buttonClicked = true;
 
-        
-        
+
+
     }
 
     public void disactivateWash()
     {
-        buttonClicked = !buttonClicked;
+        buttonClicked = false;
+        
 
 
     }
-
 
 }

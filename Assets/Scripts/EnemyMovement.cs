@@ -51,6 +51,11 @@ public class EnemyMovement : MonoBehaviour
             //Debug.Log("Distance to Player: " + distanceToPlayer);
             RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPosition - (Vector2)transform.position, maxRaycastDistance, LayerMask.GetMask("Obstacle"));
             if (hit.collider == null)  // Change from '=' to '=='
+
+            //Debug.Log("Distance to Player: " + distanceToPlayer);
+
+            if (distanceToPlayer <= detectionRadius)
+
             {
                 if (distanceToPlayer <= detectionRadius)
                 {
@@ -148,12 +153,12 @@ public class EnemyMovement : MonoBehaviour
 
     private void UpdateRotation()
     {
-         float horizontalMovement = rb.velocity.x;
-         animator.SetFloat("Horizontal", horizontalMovement);
+        float horizontalMovement = rb.velocity.x;
+        animator.SetFloat("Horizontal", horizontalMovement);
 
-         // Assuming you have a parameter named "IsMoving" in your Animator
-         bool isMoving = Mathf.Abs(horizontalMovement) > 0.1f; // Adjust the threshold as needed
-         animator.SetBool("IsMoving", isMoving);
+        // Assuming you have a parameter named "IsMoving" in your Animator
+        bool isMoving = Mathf.Abs(horizontalMovement) > 0.1f; // Adjust the threshold as needed
+        animator.SetBool("IsMoving", isMoving);
 
     }
     private void UpdateAttackRotation()
@@ -192,7 +197,7 @@ public class EnemyMovement : MonoBehaviour
 
 
                     animator.SetTrigger("IsAttack");
-                    
+
 
                     StartCoroutine(ResetAttackingState());
                 }
