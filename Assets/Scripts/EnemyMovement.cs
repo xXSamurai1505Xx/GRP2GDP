@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
             float distanceToPlayer = Vector2.Distance(transform.position, playerPosition);
 
-            Debug.Log("Distance to Player: " + distanceToPlayer);
+            //Debug.Log("Distance to Player: " + distanceToPlayer);
             RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPosition - (Vector2)transform.position, maxRaycastDistance, LayerMask.GetMask("Obstacle"));
             if (hit.collider == null)  // Change from '=' to '=='
 
