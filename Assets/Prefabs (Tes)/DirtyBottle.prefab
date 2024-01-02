@@ -14,6 +14,7 @@ GameObject:
   m_Layer: 0
   m_Name: DirtyBottle
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TagString: DirtyObjectButton
 =======
 <<<<<<< HEAD
@@ -22,6 +23,9 @@ GameObject:
   m_TagString: DirtyObjectButton
 >>>>>>> parent of cb8d79f (Washing Station Complete)
 >>>>>>> 57ffdf71cf5ae02158085d3ed562f91411c1d7d8
+=======
+  m_TagString: Untagged
+>>>>>>> parent of 557a3c8 (Revert "Washing Station Complete")
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -822,7 +822,7 @@ MonoBehaviour:
       objectReference: {fileID: 0}
     - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8988726109104450860, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1407,6 +1407,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420635435}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &465162377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,6 +1654,8 @@ PrefabInstance:
 >>>>>>> parent of 8e2ad69 (update: ui + other stuffx i forget)
 =======
 >>>>>>> parent of 8e2ad69 (update: ui + other stuffx i forget)
+=======
+>>>>>>> parent of 557a3c8 (Revert "Washing Station Complete")
 --- !u!1 &594597936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2096,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3704928639851393744, guid: d43183039cdab8446875c47faf5b2fe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3520,6 +3523,7 @@ Transform:
   - {fileID: 939188361}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 8
 =======
 <<<<<<< HEAD
@@ -3528,6 +3532,9 @@ Transform:
   m_RootOrder: 8
 >>>>>>> parent of cb8d79f (Washing Station Complete)
 >>>>>>> 57ffdf71cf5ae02158085d3ed562f91411c1d7d8
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 557a3c8 (Revert "Washing Station Complete")
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1029764885
 MonoBehaviour:
@@ -4098,7 +4105,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of cb8d79f (Washing Station Complete)
 --- !u!1 &1394371939
@@ -4645,7 +4652,7 @@ CanvasRenderer:
       objectReference: {fileID: 0}
     - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4717860689739820429, guid: 2ba688667483445468de462b224442c7, type: 3}
       propertyPath: m_LocalPosition.x

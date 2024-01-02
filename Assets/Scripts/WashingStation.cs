@@ -35,6 +35,8 @@ public class WashingStation : MonoBehaviour
     {
         if (Vector3.Distance(spawnArea.position, playerPosition.position) < 4f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated)
         {
+            Debug.Log("Activated");
+
             Instantiate(cleanObject, spawnArea.position, Quaternion.identity);
 
             buttonCheck.buttonClicked = false;
