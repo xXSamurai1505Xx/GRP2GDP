@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Item
   - Enemy
-  - DirtyObjectButton
-  - Plastic
   layers:
   - Default
   - TransparentFX
