@@ -1142,6 +1142,8 @@ GameObject:
   m_Component:
   - component: {fileID: 464270223}
   - component: {fileID: 464270222}
+  - component: {fileID: 464270224}
+  - component: {fileID: 464270225}
   m_Layer: 0
   m_Name: WashBasin
   m_TagString: Untagged
@@ -1216,6 +1218,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &464270224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464270221}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3919027, y: 0.42273661, z: 0.19999997}
+  m_Center: {x: -0.004404926, y: -0.04625114, z: 0}
+--- !u!114 &464270225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464270221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47246b2667e1c442b1d777bda7d25da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  washBasin: {fileID: 464270223}
+  cleanObject: {fileID: 3100940002646724305, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+  dirtyObjectButton: {fileID: 7685207960895015494, guid: f5185f296bc0ae740b51121e6870aeb1, type: 3}
+  playerPosition: {fileID: 1029764884}
+  buttonCheck: {fileID: 7373679781135630405, guid: c1dd5016d15957948a4f7bad7c49344a, type: 3}
 --- !u!1 &465162377
 GameObject:
   m_ObjectHideFlags: 0
