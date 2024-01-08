@@ -1550,6 +1550,7 @@ MonoBehaviour:
   healthBar: {fileID: 1438805620}
   animator: {fileID: 0}
   logicSceneManager: {fileID: 2063100209}
+  gameOverUI: {fileID: 849446628}
 --- !u!1 &420340412
 GameObject:
   m_ObjectHideFlags: 0

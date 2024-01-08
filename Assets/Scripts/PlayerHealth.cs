@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Animator animator; // Reference to the Animator component
 
     public LogicSceneManager logicSceneManager;
-
+    public GameObject gameOverUI;
     private bool isDead = false; // Flag to check if the player is dead
 
     private void Start()
@@ -52,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            logicSceneManager.restart();
+            
         }
     }
 
@@ -73,7 +73,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Handle other death-related actions here (e.g., restart level, show game over screen)
         StartCoroutine(FreezeGameAfterDelay());
-        
+
     }
     private IEnumerator FreezeGameAfterDelay()
     {
@@ -81,7 +81,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Freeze the game or perform any other actions after the delay
         Time.timeScale = 0f;  // This freezes the game
-
+        gameOverUI.SetActive(true);
         Debug.Log("Game has been frozen after player death!");
     }
 }
