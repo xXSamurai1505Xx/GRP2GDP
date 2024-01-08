@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
     public float maxRaycastDistance = 5f;
     public Transform originalPosition;
     public float returnCooldown = 3f;
+    public GameObject projectilePrefab; // Reference to the projectile prefab
 
     private bool shouldMove = true;
     private bool isAttacking = false;
@@ -26,6 +27,9 @@ public class EnemyMovement : MonoBehaviour
 
     private Animator animator;
     public PlayerHealth playerHealth;
+
+    public Transform leftSpawnPoint;
+    public Transform rightSpawnPoint;
 
     void Start()
     {
@@ -48,9 +52,8 @@ public class EnemyMovement : MonoBehaviour
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
             float distanceToPlayer = Vector2.Distance(transform.position, playerPosition);
 
-            //Debug.Log("Distance to Player: " + distanceToPlayer);
             RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPosition - (Vector2)transform.position, maxRaycastDistance, LayerMask.GetMask("Obstacle"));
-            if (hit.collider == null)  // Change from '=' to '=='
+            if (hit.collider == null)
             {
                 if (distanceToPlayer <= detectionRadius)
                 {
@@ -148,27 +151,11 @@ public class EnemyMovement : MonoBehaviour
 
     private void UpdateRotation()
     {
-         float horizontalMovement = rb.velocity.x;
-         animator.SetFloat("Horizontal", horizontalMovement);
+        float horizontalMovement = rb.velocity.x;
+        animator.SetFloat("Horizontal", horizontalMovement);
 
-         // Assuming you have a parameter named "IsMoving" in your Animator
-         bool isMoving = Mathf.Abs(horizontalMovement) > 0.1f; // Adjust the threshold as needed
-         animator.SetBool("IsMoving", isMoving);
-
-    }
-    private void UpdateAttackRotation()
-    {
-        Vector2 directionToPlayer = (playerPosition - (Vector2)transform.position).normalized;
-
-        // Calculate the horizontal and vertical components of the direction
-        float horizontalDirection = directionToPlayer.x;
-        float verticalDirection = directionToPlayer.y;
-
-        // Determine the sign of the horizontal component to set the correct direction
-        float horizontalSign = Mathf.Sign(horizontalDirection);
-
-        // Set the "Horizontal" parameter in the Animator based on the horizontal sign
-        animator.SetFloat("Horizontal", horizontalSign);
+        bool isMoving = Mathf.Abs(horizontalMovement) > 0.1f;
+        animator.SetBool("IsMoving", isMoving);
     }
 
     private void SetAttackingState(bool state)
@@ -178,34 +165,53 @@ public class EnemyMovement : MonoBehaviour
         if (state)
         {
             StopMovement();
-            // Perform attack logic here
             Debug.Log("Performing attack!");
 
             if (playerHealth != null)
             {
-                UpdateAttackRotation(); // Update rotation during attack state
+                UpdateAttackRotation();
                 float distanceToPlayer = Vector2.Distance(transform.position, playerPosition);
 
                 if (distanceToPlayer <= attackRange)
                 {
-                    playerHealth.TakeDamage(10f); // Adjust the damage amount as needed
-
-
+                    // Trigger the attack animation
                     animator.SetTrigger("IsAttack");
-                    
 
-                    StartCoroutine(ResetAttackingState());
+                    // Start the coroutine to handle shooting projectiles
+                    StartCoroutine(ShootProjectile());
                 }
             }
-
         }
     }
 
-    private IEnumerator ResetAttackingState()
+    private IEnumerator ShootProjectile()
     {
-        yield return new WaitForSeconds(1f); // Adjust the delay as needed
+        yield return new WaitForSeconds(0.5f); // Adjust the delay before shooting
+
+        // Determine the correct spawn point based on the monster's direction
+        Transform spawnPoint = (playerPosition.x > transform.position.x) ? rightSpawnPoint : leftSpawnPoint;
+
+        // Instantiate a projectile from the selected spawn point
+        GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+
+        // Set the projectile's direction along the x-axis
+        Projectile projectileScript = projectile.GetComponent<Projectile>();
+        if (projectileScript != null)
+        {
+            Vector2 directionToPlayer = new Vector2((playerPosition.x > transform.position.x) ? 1f : -1f, 0f);
+            projectileScript.SetDirection(directionToPlayer);
+        }
 
         // Reset the attacking state
         SetAttackingState(false);
+    }
+
+    private void UpdateAttackRotation()
+    {
+        Vector2 directionToPlayer = (playerPosition - (Vector2)transform.position).normalized;
+        float horizontalDirection = directionToPlayer.x;
+        float verticalDirection = directionToPlayer.y;
+        float horizontalSign = Mathf.Sign(horizontalDirection);
+        animator.SetFloat("Horizontal", horizontalSign);
     }
 }
