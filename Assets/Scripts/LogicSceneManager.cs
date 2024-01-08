@@ -7,6 +7,7 @@ public class LogicSceneManager : MonoBehaviour
 {
 
     public GameObject gameOverScreen;
+    public GameObject gameCompleteScreen;
 
     public void restart()
     {
@@ -19,4 +20,15 @@ public class LogicSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainGame");
     }
+
+    public void gameComplete()
+    {
+        gameCompleteScreen.SetActive(true);
+    }
+
+    public void homeMenu()
+    {
+        SceneManager.LoadScene("StartScreen");
+    }
+
 }
