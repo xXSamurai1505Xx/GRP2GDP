@@ -10,9 +10,9 @@ public class LogicSceneManager : MonoBehaviour
 
     public void restart()
     {
-        gameOverScreen.SetActive(true);
+        gameOverScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+        Time.timeScale = 1.0f;
     }
 
     public void startGame()
