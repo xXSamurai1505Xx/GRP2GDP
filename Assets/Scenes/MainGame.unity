@@ -1528,7 +1528,7 @@ MonoBehaviour:
   attackConeAngle: 45
   attackButton: {fileID: 111209947}
   lastMoveDirection: {x: 0, y: 0}
-  attackCooldown: 1
+  attackCooldown: 1.5
 --- !u!114 &380318459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,7 +1561,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 1438805620}
-  animator: {fileID: 0}
+  animator: {fileID: 380318456}
   logicSceneManager: {fileID: 2063100209}
   gameOverUI: {fileID: 849446628}
 --- !u!114 &380318461
@@ -2502,7 +2502,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.01, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2643,7 +2643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1157848497
 Animator:
   serializedVersion: 5
@@ -2677,9 +2677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3525075c187ab0469ad55df0d877f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 2
   attackRange: 3
-  detectionRadius: 10
+  detectionRadius: 7
   maxRaycastDistance: 5
   originalPosition: {fileID: 1157848502}
   returnCooldown: 3
@@ -2771,7 +2771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157848496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.216947, y: -0.42397523, z: 0}
+  m_LocalPosition: {x: 7.69, y: -0.51, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

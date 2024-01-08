@@ -43,16 +43,16 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return; // If the player is already dead, do nothing
 
         currentHealth -= damage;
-
+        animator.SetTrigger("IsHurt");
         if (healthBar != null)
         {
             healthBar.SetHealth(currentHealth);
         }
 
+
         if (currentHealth <= 0)
         {
             Die();
-            
         }
     }
 
@@ -73,8 +73,8 @@ public class PlayerHealth : MonoBehaviour
 
         // Handle other death-related actions here (e.g., restart level, show game over screen)
         StartCoroutine(FreezeGameAfterDelay());
-
     }
+
     private IEnumerator FreezeGameAfterDelay()
     {
         yield return new WaitForSeconds(1f);  // Adjust the delay time as needed
