@@ -9,6 +9,9 @@ TagManager:
   - Plastic
   - DirtyObjectButton
   - Obstacle
+  - Metal
+  - MetalBin
+  - PlasticBin
   layers:
   - Default
   - TransparentFX

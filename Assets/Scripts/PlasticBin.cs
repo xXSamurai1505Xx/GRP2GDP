@@ -7,6 +7,9 @@ public class PlasticBin : MonoBehaviour
 
     public Transform playerTransform;
     public ButtonCheck buttonCheck;
+    //public PlasticItem plasticItem;
+
+    public ItemInformation itemInformation;
 
 
     // Start is called before the first frame update
@@ -18,18 +21,19 @@ public class PlasticBin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(playerTransform.position, transform.position) < 4f && buttonCheck.plasticButton == true)
+        if(Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.itemButtonClicked == false && buttonCheck.plasticButton == true && itemInformation.itemInformation == "Plastic")
         {
             Debug.Log("Plastic Recycled");
 
             GameObject plastic = GameObject.FindGameObjectWithTag("Plastic");
             Destroy(plastic);
-
             buttonCheck.plasticButton = false;
 
-
-
-
+        }
+        else if(buttonCheck.itemButtonClicked == true )
+        {
+            Debug.Log("Not Plastic");
+            buttonCheck.itemButtonClicked = false;
         }
     }
 
