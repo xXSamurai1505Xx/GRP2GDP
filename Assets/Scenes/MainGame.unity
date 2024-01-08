@@ -1901,6 +1901,7 @@ GameObject:
   - component: {fileID: 744396835}
   - component: {fileID: 744396837}
   - component: {fileID: 744396838}
+  - component: {fileID: 744396839}
   m_Layer: 0
   m_Name: MetalRecyclingBin
   m_TagString: Untagged
@@ -2035,6 +2036,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23156685, y: 0.33803207}
   m_EdgeRadius: 0
+--- !u!114 &744396839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744396834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd76edfc72e4f84caea4f5c86222b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 380318453}
+  buttonCheck: {fileID: 5077814514814242753, guid: c1dd5016d15957948a4f7bad7c49344a, type: 3}
+  itemInformation: {fileID: 5996116086622072481, guid: 0da80c424fc464a4fb84e302b26af4ad, type: 3}
 --- !u!1 &849446628
 GameObject:
   m_ObjectHideFlags: 0

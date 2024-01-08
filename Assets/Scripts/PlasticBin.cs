@@ -30,7 +30,7 @@ public class PlasticBin : MonoBehaviour
             buttonCheck.plasticButton = false;
 
         }
-        else if(buttonCheck.itemButtonClicked == true )
+        else if(Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.itemButtonClicked == true )
         {
             Debug.Log("Not Plastic");
             buttonCheck.itemButtonClicked = false;
