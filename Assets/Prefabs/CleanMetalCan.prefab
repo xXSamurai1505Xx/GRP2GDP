@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4126242688478639075}
   - component: {fileID: 2222808632555231102}
   - component: {fileID: 5205010056269528620}
+  - component: {fileID: -6039892033439331803}
   m_Layer: 0
   m_Name: CleanMetalCan
   m_TagString: Item
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.24408183, y: 0.3378632}
   m_EdgeRadius: 0
+--- !u!114 &-6039892033439331803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8775844662913646513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5ac2ad822380b438e472bc73696f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 7380254362466017831, guid: 0da80c424fc464a4fb84e302b26af4ad, type: 3}
