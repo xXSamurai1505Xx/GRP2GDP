@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private Animator animator; // Reference to the Animator component
 
-    
+    public LogicSceneManager logicSceneManager;
 
     private bool isDead = false; // Flag to check if the player is dead
 
@@ -52,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            logicSceneManager.restart();
         }
     }
 
@@ -72,6 +73,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Handle other death-related actions here (e.g., restart level, show game over screen)
         StartCoroutine(FreezeGameAfterDelay());
+        
     }
     private IEnumerator FreezeGameAfterDelay()
     {

@@ -8,9 +8,9 @@ public class LogicSceneManager : MonoBehaviour
 
     public GameObject gameOverScreen;
 
-    public void Restart()
+    public void restart()
     {
-        gameOverScreen.SetActive(false);
+        gameOverScreen.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
