@@ -8,15 +8,13 @@ public class ButtonCheck : MonoBehaviour
     public bool itemButtonClicked = false;
 
     public bool plasticButton = false; 
-
+    public bool metalButton = false;
 
 
 
     public void activateWash()
     {
         buttonClicked = true;
-
-
 
     }
 
@@ -48,6 +46,17 @@ public class ButtonCheck : MonoBehaviour
     public void plasticItemDown()
     {
         plasticButton = true;
+    }
+
+
+    public void metalItemUp() 
+    {
+        metalButton = false;
+    }
+
+    public void metalItemDown()
+    {
+        metalButton = true;
     }
 
 }

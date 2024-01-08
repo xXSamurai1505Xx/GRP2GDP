@@ -11,6 +11,8 @@ public class MetalBin : MonoBehaviour
 
     public ItemInformation itemInformation;
 
+    public ScoreManager scoreManager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +23,22 @@ public class MetalBin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.itemButtonClicked == true && itemInformation.itemInformation == "Metal")
+        if (Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.metalButton == true && itemInformation.itemInformation == "Metal")
         {
             Debug.Log("Metal Recycled");
 
+            scoreManager.AddPoints(10);
             GameObject metal = GameObject.FindGameObjectWithTag("Metal");
             Destroy(metal);
-            buttonCheck.itemButtonClicked = false;
+            buttonCheck.metalButton = false;
 
         }
-        else if (buttonCheck.itemButtonClicked == true && itemInformation.itemInformation != "Metal")
+        else if (Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.plasticButton == true)
         {
+            scoreManager.AddPoints(-5);
             Debug.Log("Not Metal");
+            buttonCheck.plasticButton = false;
+
         }
     }
 }

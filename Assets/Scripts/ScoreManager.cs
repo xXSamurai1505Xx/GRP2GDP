@@ -15,14 +15,7 @@ public class ScoreManager : MonoBehaviour
         UpdateScoreText();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AddPoints(100);
-        }
-    }
+    
 
     public void AddPoints(int pointsToAdd)
     {
