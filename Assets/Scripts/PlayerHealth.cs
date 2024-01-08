@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private Animator animator; // Reference to the Animator component
 
+    
+
     private bool isDead = false; // Flag to check if the player is dead
 
     private void Start()

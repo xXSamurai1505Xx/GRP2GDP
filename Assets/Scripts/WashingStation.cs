@@ -17,7 +17,7 @@ public class WashingStation : MonoBehaviour
 
     public bool hasObjectBeenInstantiated = false;
 
-
+    public ScoreManager scoreManager;   
 
     private void Update()
     {
@@ -37,20 +37,21 @@ public class WashingStation : MonoBehaviour
         {
             Instantiate(cleanObject, spawnArea.position, Quaternion.identity);
 
+            scoreManager.AddPoints(5);
+
             buttonCheck.buttonClicked = false;
 
             hasObjectBeenInstantiated = true;
 
-            GameObject[] dirtyButtons = GameObject.FindGameObjectsWithTag(dirtyObjectButtonTag);
+            GameObject dirtyButton = GameObject.FindGameObjectWithTag(dirtyObjectButtonTag);
 
             // Destroy all found buttons (you can adjust this logic based on your needs)
-            foreach (var dirtyButton in dirtyButtons)
-            {
-                Debug.Log("Destroying dirty button...");
-                Destroy(dirtyButton);
-            }
+            
 
+            Debug.Log("Destroying dirty button...");
+            Destroy(dirtyButton);
 
+            hasObjectBeenInstantiated = false;
 
         }
     }
