@@ -2421,7 +2421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2592,11 +2592,11 @@ GameObject:
   - component: {fileID: 1157848502}
   - component: {fileID: 1157848501}
   - component: {fileID: 1157848500}
-  - component: {fileID: 1157848499}
   - component: {fileID: 1157848498}
   - component: {fileID: 1157848497}
   - component: {fileID: 1157848503}
   - component: {fileID: 1157848504}
+  - component: {fileID: 1157848505}
   m_Layer: 0
   m_Name: BottleMonsterLeftIdle_0
   m_TagString: Enemy
@@ -2644,19 +2644,6 @@ MonoBehaviour:
   originalPosition: {fileID: 1157848502}
   returnCooldown: 3
   playerHealth: {fileID: 380318460}
---- !u!114 &1157848499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157848496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b04536b373f584d949c1517b1721d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fill: {fileID: 0}
 --- !u!50 &1157848500
 Rigidbody2D:
   serializedVersion: 4
@@ -2810,6 +2797,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fill: {fileID: 838212717}
+--- !u!114 &1157848505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157848496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae45b631764e59d448207b0674ca9e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 30
+  healthSlider: {fileID: 1678507926}
+  fill: {fileID: 838212717}
+  spawnPrefab: {fileID: 1216864380231564199, guid: e24fb6fa2bb2ad34f9f01b534d87889b, type: 3}
+  animator: {fileID: 0}
 --- !u!1 &1229210672
 GameObject:
   m_ObjectHideFlags: 0
