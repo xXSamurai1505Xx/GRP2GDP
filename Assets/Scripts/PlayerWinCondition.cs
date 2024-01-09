@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PlayerWinCondition : MonoBehaviour
 {
-    public LogicSceneManager sceneManager;
+    
     public ScoreManager scoreManager;
+
+    public GameObject door;
 
     // Update is called once per frame
     void Update()
     {
-        if(scoreManager.playerScore >= 20)
+        
+
+        if(scoreManager.playerScore >= 10)
         {
-            sceneManager.gameComplete();
+            Debug.Log("Door removed");
+
+            Destroy(door);
         }
+
+
+
     }
 }
