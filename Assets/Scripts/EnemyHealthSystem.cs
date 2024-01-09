@@ -77,32 +77,33 @@ public class EnemyHealthSystem : MonoBehaviour
 
     private void StartDeathAnimation()
     {
-        // Trigger the death animation
-        if (animator != null)
-        {
-            animator.SetTrigger("IsDead");
-        }
-
-        // Disable further collisions (optional)
-        Collider2D collider = GetComponent<Collider2D>();
-        if (collider != null)
-        {
-            collider.enabled = false;
-        }
-
-        // Start the coroutine to wait for the animation to finish
-        StartCoroutine(WaitForAnimationAndDestroy());
-    }
-
-    private IEnumerator WaitForAnimationAndDestroy()
-    {
-        // Wait for the animation to finish
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-
-        // Instantiate the prefab at the enemy's position
-        Instantiate(spawnPrefab, transform.position, Quaternion.identity);
-
-        // Destroy the enemy GameObject
         Destroy(gameObject);
+        //// Trigger the death animation
+        //if (animator != null)
+        //{
+        //    animator.SetTrigger("IsDead");
+        //}
+
+        //// Disable further collisions (optional)
+        //Collider2D collider = GetComponent<Collider2D>();
+        //if (collider != null)
+        //{
+        //    collider.enabled = false;
+        //}
+
+        //// Start the coroutine to wait for the animation to finish
+        //StartCoroutine(WaitForAnimationAndDestroy());
     }
+
+    //private IEnumerator WaitForAnimationAndDestroy()
+    //{
+    //    // Wait for the animation to finish
+    //    yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+    //    // Instantiate the prefab at the enemy's position
+    //    Instantiate(spawnPrefab, transform.position, Quaternion.identity);
+
+    //    // Destroy the enemy GameObject
+    //    Destroy(gameObject);
+    //}
 }
