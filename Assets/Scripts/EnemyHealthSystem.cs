@@ -77,7 +77,9 @@ public class EnemyHealthSystem : MonoBehaviour
 
     private void StartDeathAnimation()
     {
+        Instantiate(spawnPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
+
         //// Trigger the death animation
         //if (animator != null)
         //{
