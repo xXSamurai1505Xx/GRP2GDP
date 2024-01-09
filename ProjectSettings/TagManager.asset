@@ -12,6 +12,8 @@ TagManager:
   - Metal
   - MetalBin
   - PlasticBin
+  - Bannana
+  - Glass
   layers:
   - Default
   - TransparentFX

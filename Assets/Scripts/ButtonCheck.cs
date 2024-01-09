@@ -9,8 +9,9 @@ public class ButtonCheck : MonoBehaviour
 
     public bool plasticButton = false; 
     public bool metalButton = false;
+    public bool bannanaButton = false;
 
-
+    public bool glassButton = false;
 
     public void activateWash()
     {
@@ -58,5 +59,26 @@ public class ButtonCheck : MonoBehaviour
     {
         metalButton = true;
     }
+
+    public void bannanaButtonUp()
+    {
+        bannanaButton = false;
+    }
+
+    public void bannanaButtonDown()
+    {
+        bannanaButton = true;
+    }
+
+    public void glassButtonUp()
+    {
+        glassButton = false;
+    }
+
+    public void glassButtonDown()
+    {
+        glassButton = true;
+    }
+
 
 }

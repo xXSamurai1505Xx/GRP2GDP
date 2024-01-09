@@ -23,7 +23,7 @@ public class PlasticBin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.itemButtonClicked == false && buttonCheck.plasticButton == true && itemInformation.itemInformation == "Plastic")
+        if(Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.plasticButton == true && itemInformation.itemInformation == "Plastic")
         {
             Debug.Log("Plastic Recycled");
 
