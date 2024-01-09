@@ -11,7 +11,9 @@ public class MetalBin : MonoBehaviour
 
     public ItemInformation itemInformation;
 
-    public ScoreManager scoreManager;
+    public RecycleGameObjective gameObjective;
+
+    //public ScoreManager scoreManager;
 
 
     // Start is called before the first frame update
@@ -27,7 +29,8 @@ public class MetalBin : MonoBehaviour
         {
             Debug.Log("Metal Recycled");
 
-            scoreManager.AddPoints(10);
+            gameObjective.currentScore += 1;
+            //scoreManager.AddPoints(10);
             GameObject metal = GameObject.FindGameObjectWithTag("Metal");
             Destroy(metal);
             buttonCheck.metalButton = false;
@@ -35,7 +38,7 @@ public class MetalBin : MonoBehaviour
         }
         else if (Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.plasticButton == true)
         {
-            scoreManager.AddPoints(-5);
+            //scoreManager.AddPoints(-5);
             Debug.Log("Not Metal");
             buttonCheck.plasticButton = false;
 

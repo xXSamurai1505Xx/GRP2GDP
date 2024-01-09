@@ -17,7 +17,7 @@ public class WashingStation : MonoBehaviour
 
     public bool hasObjectBeenInstantiated = false;
 
-    public ScoreManager scoreManager;   
+    //public ScoreManager scoreManager;   
 
     private void Update()
     {
@@ -37,7 +37,7 @@ public class WashingStation : MonoBehaviour
         {
             Instantiate(cleanObject, spawnArea.position, Quaternion.identity);
 
-            scoreManager.AddPoints(5);
+            //scoreManager.AddPoints(5);
 
             buttonCheck.buttonClicked = false;
 
