@@ -33,13 +33,18 @@ public class TrashBin : MonoBehaviour
             buttonCheck.bannanaButton = false;
 
         }
-        else if (Vector3.Distance(playerTransform.position, transform.position) < 5.5f && (buttonCheck.metalButton == true || buttonCheck.plasticButton))
+        else if (Vector3.Distance(playerTransform.position, transform.position) < 5.5f && buttonCheck.trashbagButton == true)
         {
-            //scoreManager.AddPoints(-5);
-            Debug.Log("Not Bannana Trash");
-            buttonCheck.metalButton = false;
-            buttonCheck.plasticButton = false;
+            Debug.Log("Trash thrown away");
+
+            //gameObjective.currentScore += 1;
+            //scoreManager.AddPoints(10);
+            GameObject trash = GameObject.FindGameObjectWithTag("Trash");
+            Destroy(trash);
+            buttonCheck.trashbagButton = false;
+
         }
+
     }
 
 }
