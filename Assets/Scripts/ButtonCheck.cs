@@ -12,6 +12,8 @@ public class ButtonCheck : MonoBehaviour
     public bool bannanaButton = false;
 
     public bool glassButton = false;
+    public bool paperButton = false;
+    public bool trashbagButton = false;
 
     public void activateWash()
     {
@@ -80,5 +82,23 @@ public class ButtonCheck : MonoBehaviour
         glassButton = true;
     }
 
+    public void paperButtonUp()
+    {
+        paperButton = false;
+    }
 
+    public void paperButtonDown()
+    {
+        paperButton = true;
+    }
+
+    public void trashBagButtonUp()
+    {
+        trashbagButton = false;
+    }
+
+    public void trashBagButtonDown()
+    {
+        trashbagButton= true;
+    }
 }

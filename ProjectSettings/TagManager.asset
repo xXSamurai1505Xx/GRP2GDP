@@ -10,10 +10,10 @@ TagManager:
   - DirtyObjectButton
   - Obstacle
   - Metal
-  - MetalBin
-  - PlasticBin
   - Bannana
   - Glass
+  - Paper
+  - Trash
   layers:
   - Default
   - TransparentFX
