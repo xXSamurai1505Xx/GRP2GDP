@@ -3332,7 +3332,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Blahblahblah
+  m_text: You are trapped in a maze with monsters. You have to recycle 10 items to
+    escape the maze. If you encounter a monster, slay them with your sword. Good
+    luck!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
