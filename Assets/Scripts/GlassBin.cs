@@ -26,7 +26,7 @@ public class GlassBin : MonoBehaviour
         {
             Debug.Log("Glass Bottle Recycled");
 
-            //gameObjective.currentScore += 1;
+            gameObjective.currentScore += 1;
             //scoreManager.AddPoints(10);
             GameObject glass = GameObject.FindGameObjectWithTag("Glass");
             Destroy(glass);
