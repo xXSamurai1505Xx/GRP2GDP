@@ -8,7 +8,7 @@ public class LogicSceneManager : MonoBehaviour
 
     public GameObject gameOverScreen;
     public GameObject gameCompleteScreen;
-
+    public GameObject playerUI;
     public void restart()
     {
         gameOverScreen.SetActive(false);
@@ -24,11 +24,13 @@ public class LogicSceneManager : MonoBehaviour
     public void gameComplete()
     {
         gameCompleteScreen.SetActive(true);
+        playerUI.SetActive(false);
     }
 
     public void homeMenu()
     {
         SceneManager.LoadScene("StartScreen");
+
     }
 
 }
