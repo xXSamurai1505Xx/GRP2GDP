@@ -13,6 +13,7 @@ public class Texts : MonoBehaviour
     public void CloseIntroduction()
     {
         IntroductionText.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     public void GoToNextText()
     {
