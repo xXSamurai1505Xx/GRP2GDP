@@ -17,6 +17,9 @@ public class WashingStation : MonoBehaviour
 
     public bool hasObjectBeenInstantiated = false;
 
+    public Hints hints;
+
+
     //public ScoreManager scoreManager;   
 
     private void Update()
@@ -53,6 +56,12 @@ public class WashingStation : MonoBehaviour
 
             hasObjectBeenInstantiated = false;
 
+        }
+        else if (Vector3.Distance(transform.position, playerPosition.position) > 4f && buttonCheck.buttonClicked == true)
+        {
+            hints.hintPanelForDirtyBottle.SetActive(true);
+
+            buttonCheck.buttonClicked = false;
         }
 
 
