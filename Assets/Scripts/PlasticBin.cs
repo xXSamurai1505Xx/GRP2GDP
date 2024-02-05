@@ -39,11 +39,7 @@ public class PlasticBin : MonoBehaviour
             && buttonCheck.plasticButton == false
             && (buttonCheck.bannanaButton == true || buttonCheck.glassButton == true || buttonCheck.metalButton == true || buttonCheck.trashbagButton == true || buttonCheck.paperButton == true))
         {
-            if (hints.hintNumber > 0)
-            {
-                hints.onClickHintPanelForBin();
-                hints.hintNumber -= 1;
-            }
+            hints.onClickHintPanelForBin();
 
             buttonCheck.bannanaButton = false;
             buttonCheck.glassButton = false;

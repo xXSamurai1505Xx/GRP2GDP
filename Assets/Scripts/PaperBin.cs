@@ -27,11 +27,8 @@ public class PaperBin : MonoBehaviour
             && (buttonCheck.bannanaButton == true || buttonCheck.glassButton == true || buttonCheck.plasticButton == true || buttonCheck.trashbagButton == true || buttonCheck.metalButton == true))
         {
 
-            if (hints.hintNumber > 0)
-            {
-                hints.onClickHintPanelForBin();
-                hints.hintNumber -= 1;
-            }
+
+            hints.onClickHintPanelForBin();
 
             buttonCheck.bannanaButton = false;
             buttonCheck.glassButton = false;

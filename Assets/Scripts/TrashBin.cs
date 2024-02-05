@@ -50,11 +50,7 @@ public class TrashBin : MonoBehaviour
             
             && (buttonCheck.glassButton == true || buttonCheck.plasticButton == true || buttonCheck.metalButton == true || buttonCheck.paperButton == true))
         {
-            if (hints.hintNumber > 0)
-            {
-                hints.onClickHintPanelForBin();
-                hints.hintNumber -= 1;
-            }
+            hints.onClickHintPanelForBin();
 
             buttonCheck.glassButton = false;
             buttonCheck.plasticButton = false;

@@ -314,6 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 0}
   gameCompleteScreen: {fileID: 0}
+  playerUI: {fileID: 0}
 --- !u!4 &351986176
 Transform:
   m_ObjectHideFlags: 0
