@@ -16,7 +16,7 @@ public class PlayerWinCondition : MonoBehaviour
     {
         
 
-        if(gameObjective.currentScore == 10)
+        if(gameObjective.currentScore == 7)
         {
             Debug.Log("Door removed");
 

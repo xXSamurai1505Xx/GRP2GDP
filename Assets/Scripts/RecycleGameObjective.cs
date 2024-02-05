@@ -7,7 +7,7 @@ public class RecycleGameObjective : MonoBehaviour
 {
     public TMP_Text scoreText;
     public int currentScore = 0;
-    private int maxScore = 10;
+    private int maxScore = 7;
 
     private void Start()
     {

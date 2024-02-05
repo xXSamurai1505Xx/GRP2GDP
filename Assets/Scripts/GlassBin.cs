@@ -12,6 +12,8 @@ public class GlassBin : MonoBehaviour
     //public ScoreManager scoreManager;
     public RecycleGameObjective gameObjective;
 
+    public Hints hints;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +33,24 @@ public class GlassBin : MonoBehaviour
             GameObject glass = GameObject.FindGameObjectWithTag("Glass");
             Destroy(glass);
             buttonCheck.glassButton = false;
-
         }
-        
+        else if (Vector3.Distance(playerTransform.position, transform.position) < 2f
+            && buttonCheck.glassButton == false
+            && (buttonCheck.bannanaButton == true || buttonCheck.metalButton == true || buttonCheck.plasticButton == true || buttonCheck.trashbagButton == true || buttonCheck.paperButton == true))
+        {
+            if (hints.hintNumber > 0)
+            {
+                hints.onClickHintPanelForBin();
+                hints.hintNumber -= 1;
+            }
+
+            buttonCheck.bannanaButton = false;
+            buttonCheck.metalButton = false;
+            buttonCheck.plasticButton = false;
+            buttonCheck.trashbagButton = false;
+            buttonCheck.paperButton = false;
+            Debug.Log("Wrong Bin, Not this");
+        }
+
     }
 }

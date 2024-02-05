@@ -12,6 +12,8 @@ public class TrashBin : MonoBehaviour
     //public ScoreManager scoreManager;
     public RecycleGameObjective gameObjective;
 
+    public Hints hints;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,22 @@ public class TrashBin : MonoBehaviour
             Destroy(trash);
             buttonCheck.trashbagButton = false;
 
+        }
+        else if (Vector3.Distance(playerTransform.position, transform.position) < 5.5f
+            
+            && (buttonCheck.glassButton == true || buttonCheck.plasticButton == true || buttonCheck.metalButton == true || buttonCheck.paperButton == true))
+        {
+            if (hints.hintNumber > 0)
+            {
+                hints.onClickHintPanelForBin();
+                hints.hintNumber -= 1;
+            }
+
+            buttonCheck.glassButton = false;
+            buttonCheck.plasticButton = false;
+            buttonCheck.metalButton = false;
+            buttonCheck.paperButton = false;
+            Debug.Log("Are you sure this is trash");
         }
 
     }

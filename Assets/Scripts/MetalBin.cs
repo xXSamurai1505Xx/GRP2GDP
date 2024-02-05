@@ -13,6 +13,8 @@ public class MetalBin : MonoBehaviour
 
     public RecycleGameObjective gameObjective;
 
+    public Hints hints;
+
     //public ScoreManager scoreManager;
 
 
@@ -36,12 +38,23 @@ public class MetalBin : MonoBehaviour
             buttonCheck.metalButton = false;
 
         }
-        else if (Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.plasticButton == true)
+        else if (Vector3.Distance(playerTransform.position, transform.position) < 2f
+            && buttonCheck.metalButton == false
+            && (buttonCheck.bannanaButton == true || buttonCheck.glassButton == true || buttonCheck.plasticButton == true || buttonCheck.trashbagButton == true || buttonCheck.paperButton == true))
         {
-            //scoreManager.AddPoints(-5);
-            Debug.Log("Not Metal");
-            buttonCheck.plasticButton = false;
 
+            if(hints.hintNumber > 0)
+            {
+                hints.onClickHintPanelForBin();
+                hints.hintNumber -= 1;
+            }
+
+            buttonCheck.bannanaButton = false;
+            buttonCheck.glassButton = false;
+            buttonCheck.plasticButton = false;
+            buttonCheck.trashbagButton = false;
+            buttonCheck.paperButton = false;
+            Debug.Log("Wrong Bin, Not this");
         }
     }
 }

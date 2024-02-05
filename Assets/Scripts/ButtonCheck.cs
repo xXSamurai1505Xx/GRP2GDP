@@ -24,9 +24,6 @@ public class ButtonCheck : MonoBehaviour
     public void disactivateWash()
     {
         buttonClicked = false;
-        
-
-
     }
 
 

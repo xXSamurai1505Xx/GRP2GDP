@@ -13,6 +13,7 @@ public class PlasticBin : MonoBehaviour
     //public ScoreManager scoreManager;
     public RecycleGameObjective gameObjective;
     
+    public Hints hints;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +35,22 @@ public class PlasticBin : MonoBehaviour
             buttonCheck.plasticButton = false;
 
         }
-        else if(Vector3.Distance(playerTransform.position, transform.position) < 2f && buttonCheck.metalButton == true )
+        else if (Vector3.Distance(playerTransform.position, transform.position) < 2f
+            && buttonCheck.plasticButton == false
+            && (buttonCheck.bannanaButton == true || buttonCheck.glassButton == true || buttonCheck.metalButton == true || buttonCheck.trashbagButton == true || buttonCheck.paperButton == true))
         {
-            //scoreManager.AddPoints(-5);
-            Debug.Log("Not Plastic");
+            if (hints.hintNumber > 0)
+            {
+                hints.onClickHintPanelForBin();
+                hints.hintNumber -= 1;
+            }
+
+            buttonCheck.bannanaButton = false;
+            buttonCheck.glassButton = false;
             buttonCheck.metalButton = false;
+            buttonCheck.trashbagButton = false;
+            buttonCheck.paperButton = false;
+            Debug.Log("Wrong Bin, Not this");
         }
     }
 

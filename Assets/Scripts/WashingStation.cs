@@ -33,7 +33,7 @@ public class WashingStation : MonoBehaviour
 
     public void wash()
     {
-        if (Vector3.Distance(spawnArea.position, playerPosition.position) < 4f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated)
+        if (Vector3.Distance(transform.position, playerPosition.position) < 4f && buttonCheck.buttonClicked == true && !hasObjectBeenInstantiated)
         {
             Instantiate(cleanObject, spawnArea.position, Quaternion.identity);
 
@@ -54,5 +54,8 @@ public class WashingStation : MonoBehaviour
             hasObjectBeenInstantiated = false;
 
         }
+
+
+
     }
 }
