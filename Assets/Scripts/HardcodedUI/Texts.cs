@@ -9,11 +9,12 @@ public class Texts : MonoBehaviour
     public GameObject Text2;
     public GameObject NextButton;
     public GameObject CloseButton;
+    public GameObject Book;
     // Start is called before the first frame update
     public void CloseIntroduction()
     {
         IntroductionText.SetActive(false);
-        Time.timeScale = 1.0f;
+        Book.SetActive(true);
     }
     public void GoToNextText()
     {
@@ -21,5 +22,9 @@ public class Texts : MonoBehaviour
         Text2.SetActive(true);
         NextButton.SetActive(false);
         CloseButton.SetActive(true);
+    }
+    public void CloseBook()
+    {
+        Book.SetActive(false);
     }
 }
