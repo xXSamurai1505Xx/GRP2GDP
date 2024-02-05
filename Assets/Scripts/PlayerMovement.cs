@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVector = Vector2.zero;
     public Vector2 lastMoveDirection = Vector2.up;
     private Rigidbody2D rb = null;
-    private float speed = 10f;
+    public float speed = 4f;
     private Animator animator;
     private bool isDead = false; // Flag to check if the player is dead
 
