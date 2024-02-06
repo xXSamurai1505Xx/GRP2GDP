@@ -58,7 +58,7 @@ public class Hints : MonoBehaviour
         hintPanelForBin.SetActive(true);
 
         // Wait for 1 second
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
 
         // Set the panel back to inactive after 1 second
         hintPanelForBin.SetActive(false);
